@@ -7,13 +7,12 @@ export default function Home() {
       {/* Sticky Navigation Bar */}
       <nav className="bg-white shadow-md sticky top-0 z-50">
         <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
-          {/* Logo Addition */}
-          <div className="flex items-center gap-3">
-            <span className="text-3xl">🌿</span>
-            <h1 className="text-2xl font-bold text-green-800">
-              GreenLine Landscaping
-            </h1>
-          </div>
+         <div className="flex items-center gap-3">
+  <span className="text-3xl">🌿</span>
+  <h1 className="text-2xl font-bold text-green-800">
+    GreenLine Landscaping
+  </h1>
+</div>
           <div className="space-x-6 hidden md:flex">
             <a href="#services" className="hover:text-green-700">Services</a>
             <a href="#about" className="hover:text-green-700">About</a>
@@ -31,8 +30,7 @@ export default function Home() {
             "url('https://images.unsplash.com/photo-1506744038136-46273834b3fb')",
         }}
       >
-        {/* Step 4: Optimized Overlay Visibility */}
-        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-black/70"></div>
 
         <div className="relative z-10 max-w-6xl mx-auto">
           {/* Enhanced Heading Animation */}
@@ -65,26 +63,25 @@ export default function Home() {
         </div>
       </section> 
 
-      {/* Step 2: Optimized Services Section */}
-      <section id="services" className="py-16 px-6 bg-gray-100">
+      {/* Services Section */}
+      <section id="services" className="py-20 px-6 bg-gray-100">
         <div className="max-w-6xl mx-auto">
-          {/* Step 3: Upgraded Heading Accent */}
-          <h2 className="text-5xl font-extrabold text-center mb-12 text-gray-900">Our Services</h2>
+          <h2 className="text-4xl font-bold text-center mb-12">Our Services</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {/* Lawn Maintenance Card */}
-            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer border border-gray-100">
+            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer">
               <h3 className="text-xl font-bold mb-3">🌿 Lawn Maintenance</h3>
               <p>Weekly mowing, edging, fertilization and seasonal care.</p>
             </div>
             
             {/* Hardscaping Card */}
-            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer border border-gray-100">
+            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer">
               <h3 className="text-xl font-bold mb-3">🧱 Hardscaping</h3>
               <p>Patios, retaining walls and outdoor living spaces.</p>
             </div>
             
             {/* Irrigation Systems Card */}
-            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer border border-gray-100">
+            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 cursor-pointer">
               <h3 className="text-xl font-bold mb-3">💧 Irrigation Systems</h3>
               <p>Smart watering systems and efficient irrigation design.</p>
             </div>
@@ -92,11 +89,10 @@ export default function Home() {
         </div>
       </section> 
 
-      {/* Step 1: Optimized Why Choose Us Section */}
-      <section id="about" className="py-16 px-6 bg-white text-gray-900">
+      {/* Why Choose Us Section */}
+      <section id="about" className="py-20 px-6">
         <div className="max-w-6xl mx-auto text-center">
-          {/* Step 3: Upgraded Heading Accent */}
-          <h2 className="text-5xl font-extrabold text-center mb-12 text-gray-900">Why Choose GreenLine Landscaping?</h2>
+          <h2 className="text-4xl font-bold mb-8">Why Choose GreenLine Landscaping?</h2>
           <div className="grid md:grid-cols-3 gap-8 mt-10">
             <div className="p-6 shadow-lg rounded-xl">
               <h3 className="text-xl font-bold mb-3">🌱 Eco-Friendly</h3>
@@ -161,41 +157,37 @@ export default function Home() {
       {/* Gallery Section */}
       <section id="gallery" className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          {/* Step 3: Upgraded Heading Accent */}
-          <h2 className="text-5xl font-extrabold text-center mb-12 text-gray-900">Recent Projects</h2>
+          <h2 className="text-4xl font-bold text-center mb-12">Recent Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Gallery Item 1 - Step 5 Dynamic Scale Wrapper */}
-            <div className="rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all duration-300 group">
+            <div className="overflow-hidden rounded-xl shadow-lg group">
               <img
                 src="https://images.unsplash.com/photo-1598902108854-10e335adac99"
                 alt="Backyard Transformation"
                 className="w-full h-64 object-cover group-hover:scale-110 transition duration-500"
               />
-              <div className="p-4 bg-white">
+              <div className="p-4">
                 <h3 className="font-bold text-lg">Backyard Transformation</h3>
               </div>
             </div>
 
-            {/* Gallery Item 2 - Step 5 Dynamic Scale Wrapper */}
-            <div className="rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all duration-300 group">
+            <div className="overflow-hidden rounded-xl shadow-lg group">
               <img
                 src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae"
                 alt="Premium Lawn Design"
                 className="w-full h-64 object-cover group-hover:scale-110 transition duration-500"
               />
-              <div className="p-4 bg-white">
+              <div className="p-4">
                 <h3 className="font-bold text-lg">Premium Lawn Design</h3>
               </div>
             </div>
 
-            {/* Gallery Item 3 - Step 5 Dynamic Scale Wrapper */}
-            <div className="rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-all duration-300 group">
+            <div className="overflow-hidden rounded-xl shadow-lg group">
               <img
                 src="https://images.unsplash.com/photo-1510798831971-661eb04b3739"
                 alt="Outdoor Living Space"
                 className="w-full h-64 object-cover group-hover:scale-110 transition duration-500"
               />
-              <div className="p-4 bg-white">
+              <div className="p-4">
                 <h3 className="font-bold text-lg">Outdoor Living Space</h3>
               </div>
             </div>
@@ -233,8 +225,7 @@ export default function Home() {
       {/* Testimonials Section */}
       <section className="py-20 px-6 bg-gray-100">
         <div className="max-w-6xl mx-auto">
-          {/* Step 3: Upgraded Heading Accent */}
-          <h2 className="text-5xl font-extrabold text-center mb-12 text-gray-900">What Our Customers Say</h2>
+          <h2 className="text-4xl font-bold text-center mb-12">What Our Customers Say</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-xl shadow-lg">
               <p>GreenLine completely transformed our backyard.</p>
